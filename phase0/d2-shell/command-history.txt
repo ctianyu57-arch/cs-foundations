@@ -1,0 +1,49 @@
+    1  [200~cd ~~
+    2  cd~
+    3  cd
+    4  \cd
+    5  cd
+    6  pwd
+    7  sudo apt update && sudo apt install python3 python3-pip git -y
+    8  curl-LsSf https://astral.sh/uv/install.sh|sh
+    9  curl -LsSf https://astral.sh/uv/install.sh | sh
+   10  python3 --version
+   11  uv --version
+   12  git --version
+   13  git config --global user.name "ctianyu57-arch"
+   14  git config --global user.email "你的注册邮箱"
+   15  cd ~
+   16  git clone https://github.com/ctianyu57-arch/cs-foundations.git
+   17  git add .
+   18  git commit -m "day1: readme"
+   19  git push
+   20  cd cs-foundations
+   21  cd
+   22  pwd
+   23  ls
+   24  ls-l
+   25  ls -l
+   26  cd cs-foundations
+   27  pwd
+   28  cd ..
+   29  pwd
+   30  cd -
+   31  pwd
+   32  mkdir -p phase0/d2-shell/practice
+   33  cd phase0/d2-shell/practice
+   34  pwd
+   35  touch practice.txt
+   36  ls -l
+   37  touch ../shell.txt
+   38  touch ../../phase0.txt
+   39  ls ..
+   40  ls ../..
+   41  cd ../../..
+   42  pwd
+   43  cp -r phase0 phase0-copy
+   44  ls -R phase0-copy
+   45  rm -r phase0
+   46  ls
+   47  mv phase0-copy phase0
+   48  ls
+   49  history > phase0/d2-shell/command-history.txt
