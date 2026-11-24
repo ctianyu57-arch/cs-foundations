@@ -1,0 +1,5 @@
+INFO 09:00 payment service started
+ERROR 09:03 payment timeout
+INFO 09:04 retrying payment
+ERROR 09:05 payment timeout
+INFO 09:06 payment recovered
