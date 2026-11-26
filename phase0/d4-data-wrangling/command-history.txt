@@ -1,0 +1,159 @@
+    1  [200~cd ~~
+    2  cd~
+    3  cd
+    4  \cd
+    5  cd
+    6  pwd
+    7  sudo apt update && sudo apt install python3 python3-pip git -y
+    8  curl-LsSf https://astral.sh/uv/install.sh|sh
+    9  curl -LsSf https://astral.sh/uv/install.sh | sh
+   10  python3 --version
+   11  uv --version
+   12  git --version
+   13  git config --global user.name "ctianyu57-arch"
+   14  git config --global user.email "你的注册邮箱"
+   15  cd ~
+   16  git clone https://github.com/ctianyu57-arch/cs-foundations.git
+   17  git add .
+   18  git commit -m "day1: readme"
+   19  git push
+   20  cd cs-foundations
+   21  cd
+   22  pwd
+   23  ls
+   24  ls-l
+   25  ls -l
+   26  cd cs-foundations
+   27  pwd
+   28  cd ..
+   29  pwd
+   30  cd -
+   31  pwd
+   32  mkdir -p phase0/d2-shell/practice
+   33  cd phase0/d2-shell/practice
+   34  pwd
+   35  touch practice.txt
+   36  ls -l
+   37  touch ../shell.txt
+   38  touch ../../phase0.txt
+   39  ls ..
+   40  ls ../..
+   41  cd ../../..
+   42  pwd
+   43  cp -r phase0 phase0-copy
+   44  ls -R phase0-copy
+   45  rm -r phase0
+   46  ls
+   47  mv phase0-copy phase0
+   48  ls
+   49  history > phase0/d2-shell/command-history.txt
+   50  cat phase0/d2-shell/command-history.txt
+   51  git status
+   52  git add.
+   53  git commit
+   54  git push
+   55  git add .
+   56  git commit -m"day2: shell basics"
+   57  git push
+   58  cd ~/cs-foundations
+   59  pwd
+   60  cd ~/cs-foundations
+   61  pwd
+   62  cd phase0
+   63  pwd
+   64  ls
+   65  mkdir d3-shell-tools
+   66  cd d3-shell-tools
+   67  touch payments.log
+   68  ls
+   69  cat payments.log
+   70  grep "ERROR"payments.log
+   71  grep "ERROR" payments.log
+   72  grep "ERROR" payments.log | wc -l
+   73  grep -v "ERROR" payments.log
+   74  mkdir -p sandbox/nested
+   75  touch sandbox/report.pdf
+   76  touch sandbox/photo.jpg
+   77  touch sandbox/archive.zip
+   78  touch sandbox/notes.txt
+   79  touch "sandbox/with space.pdf"
+   80  touch sandbox/nested/keep.pdf
+   81  find sandbox -type f
+   82  find sandbox -name "*.pdf"
+   83  find sandbox -maxdepth 1 -name "*.pdf"
+   84  ./cleanup.sh --dry-run sandbox
+   85  ./cleanup.sh sandbox
+   86  touch cleanup.sh
+   87  bash cleanup.sh
+   88  echo $?
+   89  bash cleanup.sh does-not-exist
+   90  echo $?
+   91  bash cleanup.sh sandbox
+   92  bash cleanup.sh --dry-run sandbox
+   93  find sandbox -type f | wc -l
+   94  ls sandbox
+   95  bash cleanup.sh sandbox
+   96  find sandbox -type f | wc -l
+   97  ls -R sandbox
+   98  bash cleanup.sh sandbox
+   99  echo $?
+  100  find sandbox -type f | wc -l
+  101  chmod +x cleanup.sh
+  102  ./cleanup.sh --dry-run sandbox
+  103  echo $?
+  104  touch README.md
+  105  # D3 Shell Tools
+  106  1. cleanup.sh 解决什么问题？
+  107  2. dry-run 和正式运行有什么区别？
+  108  3. 为什么脚本里的文件路径变量要加双引号？
+  109  4. 哪项测试证明脚本没有递归整理子目录？
+  110  5. 重复运行时，你观察到的退出码和文件总数分别是多少？这说明什么？
+  111  ## 实测记录
+  112  - ERROR 行数：2
+  113  - dry-run 后文件数：6
+  114  - 正式运行后文件数：6
+  115  - 重复运行后文件数：6
+  116  - nested/keep.pdf：仍在原处
+  117  \code README.md
+  118  cat README.md
+  119  history > command-history.txt
+  120  cd ~/cs-foundations
+  121  git add .
+  122  git commit -m "day3: shell tools"
+  123  git push
+  124  history > command-history.txt
+  125  cd ~/cs-foundations
+  126  git add .
+  127  git commit -m "day3: shell tools"
+  128  git push
+  129  cd ~/cs-foundations
+  130  git add .
+  131  git commit -m "day3: finish readme"
+  132  git push
+  133  git add .
+  134  git commit -m "day3: finish readme"
+  135  git push
+  136  mkdir -p phase0/d4-data-wrangling
+  137  cd phase0/d4-data-wrangling
+  138  vim vim-practice.txt
+  139  cat vim-practice.txt
+  140  vim vim-practice.txt
+  141  cat vim-practice.txt
+  142  touch transactions.csv
+  143  code transactions.csv
+  144  cat transactions.csv
+  145  cut -d',' -f3 transactions.csv
+  146  cd phase0/d4-data-wrangling
+  147  cut -d',' -f3 transactions.csv
+  148  cut -d',' -f3 transactions.csv | tail -n +2cut -d',' -f3 transactions.csv | tail -n +2
+  149  cut -d',' -f3 transactions.csv | tail -n +2
+  150  cut -d',' -f3 transactions.csv | tail -n +2 | sort
+  151  cut -d',' -f3 transactions.csv | tail -n +2 | sort | uniq -c
+  152  cut -d',' -f3 transactions.csv | tail -n +2 | sort -u | wc -l
+  153  cut -d',' -f2 transactions.csv | tail -n +2 | sort -nr | head -3
+  154  grep 'USD' transactions.csv | cut -d',' -f2
+  155  mv transactions.csv commands.md
+  156  code transactions.csv
+  157  mv transactions.csv commands.md
+  158  code transactions.csv
+  159  history > command-history.txt
